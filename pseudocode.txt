@@ -3,7 +3,7 @@
     1. Review flashcards
     2. Create flashcard
     3. Delete flashcard
-Get user input of menu option
+✅Get user input of menu option
 If Review flashcards is selected
     Retrieve json file from disk into dictionary
     Loop until all flashcards have been reviewed
