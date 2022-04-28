@@ -1,5 +1,5 @@
-Greet user with brief instructions on how to use the app
-Show menu of options:
+✅Greet user with brief instructions on how to use the app
+✅Show menu of options:
     1. Review flashcards
     2. Create flashcard
     3. Delete flashcard
