@@ -1,24 +1,25 @@
+# from curses import flash
 import json
-from optparse import Option
+from operator import truediv
+# from optparse import Option
 from os import system, name
 import sys
 
 flashcards = {}
 
 def main():
-    flashcards = read_flashcards_from_disk()
-
-    clear()
-    print(flashcards)
-    greet_user()
-    show_menu()
-    option = get_option()
-    process_menu_option(option)
+    while(True):
+        clear()
+        read_flashcards_from_disk()
+        greet_user()
+        show_menu()
+        option = get_option()
+        process_menu_option(option)
 
 def read_flashcards_from_disk():
+    global flashcards
     with open('flashcards.json') as json_file:
         flashcards = json.load(json_file)
-        return flashcards
 
 def clear():
     # for windows
@@ -37,11 +38,12 @@ def show_menu():
     print("1. Review flashcards")
     print("2. Create flashcards")
     print("3. Delete flashcards")
+    print("4. Quit")
     
 def get_option():
     option = 0
-    while option not in ("1", "2", "3"):
-        option = input("Please enter an option number (1-3): ")
+    while option not in ("1", "2", "3", "4"):
+        option = input("Please enter an option number (1-4): ")
     return(option)
 
 def process_menu_option(option):
@@ -49,18 +51,24 @@ def process_menu_option(option):
         print("Review Flashcards")
     elif option == str(2):
         create_flashcard()
+        return
     elif option == str(3):
         print("Delete Flashcard")
+    elif option == str(4):
+        quit()
     
 
 def create_flashcard():
     while(True):
-        front = input("Please enter text for flashcard front (word, question, etc.: ")
-        back = input("Please enter text for flashcard back (definition, answer, etc.: ")
+        print("\nWhen done entering flashcards, press enter for FRONT to exit\n")
+        front = input("Please enter text for flashcard FRONT (word, question, etc.: ")
+        if front == "":
+            return
+        back = input("Please enter text for flashcard BACK (definition, answer, etc.: ")
         flashcards[front] = back
-        print(flashcards)
         with open('flashcards.json', 'w') as outfile:
             json.dump(flashcards, outfile)
+        clear()
         front = ""
         back = ""
 
