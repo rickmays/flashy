@@ -1,8 +1,9 @@
 ✅Greet user with brief instructions on how to use the app
 ✅Show menu of options:
-    1. Review flashcards
-    2. Create flashcard
-    3. Delete flashcard
+    ✅1. Review flashcards
+    ✅2. Create flashcard
+    ✅3. Delete flashcard
+    ✅4. Quit
 ✅Get user input of menu option
 If Review flashcards is selected
     Retrieve json file from disk into dictionary
@@ -13,13 +14,12 @@ If Review flashcards is selected
         Get input on when ready for next flashcard or done
         If ready for next flashcard, continue loop
         If done, display menu
-If Create flashcard is selected
-    Get input of front of flash card (word to define, question, etc.)
-    Get input of back of flash card (definition, correct answer, etc.)
-    Add flashcard to dictionary and save it as json file
-    Ask user if they want to create any more flashcards
-    If user responds yes, loop back to input of front of card, etc.
-    If user responds no, show menu of options
+✅If Create flashcard is selected
+   ✅ Display message to press enter on front to stop entering flashcards
+    ✅Get input of front of flash card (word to define, question, etc.)
+    ✅Get input of back of flash card (definition, correct answer, etc.)
+    ✅Add flashcard to dictionary and save it as json file
+    ✅Continue adding flashcards
 If Delete flashcard is selected
     Retrieve json file of flashcards from the file folder
     Show numbered list of flashcards
@@ -28,3 +28,4 @@ If Delete flashcard is selected
     Confirm that this is correct card to delete
     If yes, remove the card from the dictionary and save json
     If no, ask if done deleting or to continue
+If Quit is selected, quit()
