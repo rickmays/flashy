@@ -5,15 +5,15 @@
     ✅3. Delete flashcard
     ✅4. Quit
 ✅Get user input of menu option
-If Review flashcards is selected
-    Retrieve json file from disk into dictionary
-    Loop until all flashcards have been reviewed
-        Display front of flashcard
-        Get input on when ready to see the back
-        Display back of flashcard
-        Get input on when ready for next flashcard or done
-        If ready for next flashcard, continue loop
-        If done, display menu
+✅If Review flashcards is selected
+    ✅Retrieve json file from disk into dictionary
+    ✅Loop until all flashcards have been reviewed
+        ✅Display front of flashcard
+        ✅Get input on when ready to see the back
+        ✅Display back of flashcard
+        ✅Get input on when ready for next flashcard or done
+        ✅If ready for next flashcard, continue loop
+        ✅If done, display menu
 ✅If Create flashcard is selected
    ✅ Display message to press enter on front to stop entering flashcards
     ✅Get input of front of flash card (word to define, question, etc.)

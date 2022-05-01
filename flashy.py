@@ -48,7 +48,7 @@ def get_option():
 
 def process_menu_option(option):
     if option == str(1):
-        print("Review Flashcards")
+        review_flashcards()
     elif option == str(2):
         create_flashcard()
         return
@@ -71,6 +71,23 @@ def create_flashcard():
         clear()
         front = ""
         back = ""
+        
+def review_flashcards():
+    length = len(flashcards)
+    key_list = list(flashcards.keys())
+    value_list = list(flashcards.values())
+    for i in range(0, length):
+        clear()
+        print("Press enter/return key to see back of flashcard\n")
+        print(key_list[i])
+        input()
+        print(value_list[i], end = "\n\n")
+        input_string = input("Press enter/return key for next flashcard or q to return to menu: ")
+        if input_string.lower() == "q":
+            return
+        clear()
+        
+    
 
 
 if __name__ == '__main__':
