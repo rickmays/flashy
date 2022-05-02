@@ -21,11 +21,11 @@
     ✅Add flashcard to dictionary and save it as json file
     ✅Continue adding flashcards
 If Delete flashcard is selected
-    Retrieve json file of flashcards from the file folder
-    Show numbered list of flashcards
-    Get input on which flashcard to delete
-    Display front and back of flashcard
-    Confirm that this is correct card to delete
-    If yes, remove the card from the dictionary and save json
-    If no, ask if done deleting or to continue
-If Quit is selected, quit()
+    ✅Retrieve json file of flashcards from the file folder
+    ✅Show numbered list of flashcards
+    ✅Get input on which flashcard to delete
+    ✅Display front of flashcard
+    ✅Confirm that this is correct card to delete
+    ✅If yes, remove the card from the dictionary and save json
+    ✅If no, ask if done deleting or to continue
+✅If Quit is selected, quit()
