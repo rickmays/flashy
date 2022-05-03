@@ -1,1 +1,1 @@
-{"<article>": "defines an article", "<aside>": "defines some content loosely related to the page content", "<audio>": "embeds a sound, or an audio stream into an HTML document", "<footer>": "Represents the footer of a document or a section"}
+{"<article>": "defines an article", "<audio>": "embeds a sound, or an audio stream into an HTML document", "<footer>": "Represents the footer of a document or a section", "<section>": "Defines a section of a document, such as header, footer etc."}
